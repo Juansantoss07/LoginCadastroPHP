@@ -20,6 +20,7 @@ class FabricaUsuario{
         
         session_start();
         $_SESSION['logado'] = true;
+        $_SESSION['nome_usuario'] = $nome;
         header('Location: ../../view/home.php');
         exit();
     }

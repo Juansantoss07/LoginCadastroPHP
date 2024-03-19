@@ -20,13 +20,18 @@
                 <input type="text" name="telefone" id="" required>
                 <?php
                 if (isset($_GET['errorTelefone'])) {
-                    echo "<p for='senha' style='color: red; font-size:13px;'> " . htmlspecialchars($_GET['errorTelefone']) . "</p>";
+                    echo "<p style='color: red; font-size:13px;'> " . htmlspecialchars($_GET['errorTelefone']) . "</p>";
                 }
                 ?>
                 <label for="aniversario">Data de nascimento:</label>
                 <input type="date" name="aniversario" id="">
                 <label for="email">E-mail:</label>
                 <input type="email" name="email" id="" required>
+                <?php
+                if (isset($_GET['errorEmail'])) {
+                    echo "<p style='color: red; font-size:13px;'> " . htmlspecialchars($_GET['errorEmail']) . "</p>";
+                }
+                ?>
                 <label for="senha">Senha:</label>
                 <input type="password" name="senha" id="" required>
 

@@ -25,4 +25,9 @@ class Telefone{
             exit();
         }
     }
+
+    public function __toString()
+    {
+        return $this->numero;
+    }
 }

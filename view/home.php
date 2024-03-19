@@ -20,7 +20,7 @@ if ($_SESSION['logado'] !== true) {
 <body>
     <main>
         <h1>VOCÊ ESTÁ LOGADAO</h1>
-        
+        <h2>Olá, <?php echo $_SESSION['nome_usuario']?></h2>
         <form action="/controller/Usuario/DestroiSessao.php" method="post">
             <button type="submit">Logout</button>
         </form>

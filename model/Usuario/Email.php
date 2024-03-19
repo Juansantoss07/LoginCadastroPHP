@@ -11,4 +11,9 @@ class Email{
         $this->endereco =  $endereco;
         return $this->endereco;
     }
+
+    public function __toString()
+    {
+        return $this->endereco;
+    }
 }

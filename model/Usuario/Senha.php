@@ -19,4 +19,9 @@ class Senha{
         $this->senha = $senhaProtegida;
         return $this->senha;
     }
+
+    public function __toString()
+    {
+        return $this->senha;
+    }
 }
