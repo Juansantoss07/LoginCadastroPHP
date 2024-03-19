@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    display: grid;
+    min-width: 50vw;
+    min-height: 100vh;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/12/23/18/man-1253004_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    image-rendering: optimizeSpeed;
+}
+
+main .container-login {
+    padding: 2rem;
+    backdrop-filter: blur(12px);
+    min-width: 50vw;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container-login form{
+    display: grid;
+    gap: .5rem;
+    color: #fff;
+    width: 50%;
+    border: 5px solid #fff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+main .container-login form input{
+    outline: none;
+    border: none;
+    padding: .4rem;
+    border-radius: 6px;
+}
+main .container-login form input[type='submit']{
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-bottom: .5rem;
+}
+main .container-login form input[type='submit'][value="Cadastrar"]{
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-bottom: .5rem;
+    background-color: green;
+    color: #fff;
+}
+main .container-login form input[type='submit'][value="Cadastrar"]:hover{
+    background-color: green;
+}
+main .container-login form input[type='submit']:hover{
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+}
+
+div.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+div.links a{
+    color: #fff;
+}
