@@ -36,6 +36,7 @@ class AutenticarUsuario
                     // Autenticar o usuário
                     session_start();
                     $_SESSION['logado'] = true;
+                    $_SESSION['email'] = $email;
                     header('Location: ../../view/home.php');
                     exit();
                 } else {
